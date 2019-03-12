@@ -1,6 +1,7 @@
 import '../../shared/custom-module.css';
 import './product-selector.less';
 import './shopify_logo_whitebg.svg';
+import $ from 'jquery';
 
 var currentValue = null;
 var isDisabled = true;

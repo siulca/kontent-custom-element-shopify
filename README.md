@@ -10,7 +10,7 @@ If you want to use Shopify product selector in your project in Kentico Cloud, fo
 * Open / create a content model to which you want to add Shopify selector
 * Add **Custom element** content element
 * Open configuration of the content element
-* Use following URL as Hosted code URL (HTTPS): https://kentico.github.io/custom-element-samples/shopify/product-selector.html
+* Use following URL as Hosted code URL (HTTPS): https://kentico.github.io/custom-element-samples/Shopify/product-selector.html
 
 # Installation
 
@@ -25,7 +25,8 @@ Prerequisites:
 ```
 git clone https://github.com/Kentico/custom-element-devkit.git
 cd custom-element-devkit
-git clone https://github.com/kenticomartinh/kc-shopify.git ./client/custom-elements/shopify
+git clone https://github.com/kenticomartinh/kc-shopify.git ./client/custom-elements/kc-shopify
+npm install --save jquery
 npm start -- -hw
 ```
-Browse: https://localhost:3000/custom-elements/shopify/wrap
+Browse: https://localhost:3000/custom-elements/kc-shopify/wrap
