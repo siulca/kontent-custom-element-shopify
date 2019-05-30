@@ -26,7 +26,7 @@ Prerequisites:
 git clone https://github.com/Kentico/custom-element-devkit.git
 cd custom-element-devkit
 git clone https://github.com/kenticomartinh/kc-shopify.git ./client/custom-elements/kc-shopify
-npm install --save jquery
+npm install --save jquery@^3.4.0
 npm start -- -hw
 ```
 Browse: https://localhost:3000/custom-elements/kc-shopify/wrap
