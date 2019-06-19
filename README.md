@@ -1,5 +1,7 @@
 # Shopify product selector for Kentico Cloud
 
+[![Stack Overflow](https://img.shields.io/badge/Stack%20Overflow-ASK%20NOW-FE7A16.svg?logo=stackoverflow&logoColor=white)](https://stackoverflow.com/tags/kentico-cloud)
+
 This repository contains source code of Shopify product selector custom element for Kentico Cloud
 
 # Use
@@ -33,8 +35,16 @@ Prerequisites:
 ```
 git clone https://github.com/Kentico/custom-element-devkit.git
 cd custom-element-devkit
-git clone https://github.com/kenticomartinh/kc-shopify.git ./client/custom-elements/kc-shopify
+git clone https://github.com/Kentico/cloud-custom-element-sample-shopify.git ./client/custom-elements/cloud-custom-element-sample-shopify
 npm install --save jquery
 npm start -- -hw
 ```
-Browse: https://localhost:3000/custom-elements/kc-shopify/wrap
+Browse: https://localhost:3000/custom-elements/cloud-custom-element-sample-shopify/wrap
+
+# Live site implementation sample
+
+If you want to see live site example of Shopify product displayed on the live site, browse to a [deployed sample site](https://kentico-cloud-sample-app-react-shopify.surge.sh/en-us/articles/3120ec15-a4a2-47ec-8ccd-c85ac8ac5ba5).
+
+See source code of the sample site implementation [here](https://github.com/Kentico/cloud-sample-app-react/commit/b93be362f8c6b854e98324fb9d68bc4a97c9cd79).
+
+![Analytics](https://kentico-ga-beacon.azurewebsites.net/api/UA-69014260-4/Kentico/cloud-custom-element-sample-shopify?pixel)
