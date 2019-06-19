@@ -11,6 +11,14 @@ If you want to use Shopify product selector in your project in Kentico Cloud, fo
 * Add **Custom element** content element
 * Open configuration of the content element
 * Use following URL as Hosted code URL (HTTPS): https://kentico.github.io/custom-element-samples/Shopify/product-selector.html
+* Provide the following JSON parameters for the custom element to connect it to your store, replace the macros with the actual values from Shopify admin UI
+
+```
+{
+  "storeFrontAccessToken": "<YOUR ACCESS TOKEN>",
+  "apiEndpoint": "https://<YOUR STORE NAME>.myshopify.com/api/graphql"
+}
+```
 
 # Installation
 
