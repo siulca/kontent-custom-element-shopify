@@ -1,19 +1,14 @@
 # Shopify product selector for Kentico Cloud
 
-[![Stack Overflow](https://img.shields.io/badge/Stack%20Overflow-ASK%20NOW-FE7A16.svg?logo=stackoverflow&logoColor=white)](https://stackoverflow.com/tags/kentico-cloud)
+[![Stack Overflow](https://img.shields.io/badge/Stack%20Overflow-ASK%20NOW-FE7A16.svg?logo=stackoverflow&logoColor=white)](https://stackoverflow.com/tags/kentico-cloud) [![Netlify Status](https://api.netlify.com/api/v1/badges/c36f1f37-7186-48ba-bc0b-ec33f1d4f9bd/deploy-status)](https://app.netlify.com/sites/kontent-shopify-product-selector-demo/deploys)
 
 This repository contains source code of Shopify product selector custom element for Kentico Cloud
 
-# Use
+## Quick testing
 
-If you want to use Shopify product selector in your project in Kentico Cloud, follow these steps:
+If you're interested in trying this out without deploying it yourself, you can use <https://kontent-shopify-product-selector-demo.netlify.com/>. This is the deployed version of the master branch in this repo. **This should only be used for quick testing as it is subject to change**
 
-* In Kentico Cloud open Content models tab
-* Open / create a content model to which you want to add Shopify selector
-* Add **Custom element** content element
-* Open configuration of the content element
-* Use following URL as Hosted code URL (HTTPS): https://kentico.github.io/custom-element-samples/Shopify/product-selector.html
-* Provide the following JSON parameters for the custom element to connect it to your store, replace the macros with the actual values from Shopify admin UI
+You will also need to provide the following JSON parameters for the custom element to connect to your store. Replace the placeholders with the actual values from the Shopify admin UI:
 
 ```
 {
@@ -22,26 +17,14 @@ If you want to use Shopify product selector in your project in Kentico Cloud, fo
 }
 ```
 
-# Installation
 
-If you want to adjust the implementation, first download [Kentico Cloud Custom Elements Devkit](https://github.com/kentico/custom-element-devkit). This repository should be positioned within `/client/custom-elements` folder. For further instructions on devkit implementation, please refer to [Custom Element Devkit README](https://github.com/Kentico/custom-element-devkit/blob/master/readme.md).
+## Deploying
 
-## Get started
+Netlify has made this easy. If you click the deploy button below, it will guide you through the process of deploying it to Netlify and leave you with a copy of the repository in your GitHub account as well.
 
-Prerequisites:
-* Node.js
-* git
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/Kentico/cloud-custom-element-sample-shopify)
 
-```
-git clone https://github.com/Kentico/custom-element-devkit.git
-cd custom-element-devkit
-git clone https://github.com/Kentico/cloud-custom-element-sample-shopify.git ./client/custom-elements/cloud-custom-element-sample-shopify
-npm install --save jquery@^3.4.0
-npm start -- -hw
-```
-Browse: https://localhost:3000/custom-elements/cloud-custom-element-sample-shopify/wrap
-
-# Live site implementation sample
+## Live site implementation sample
 
 If you want to see live site example of Shopify product displayed on the live site, browse to a [deployed sample site](https://kentico-cloud-sample-app-react-shopify.surge.sh/en-us/articles/3120ec15-a4a2-47ec-8ccd-c85ac8ac5ba5).
 
