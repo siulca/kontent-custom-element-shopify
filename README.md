@@ -1,8 +1,8 @@
 # Shopify product selector for Kentico Kontent
 
-[![Stack Overflow](https://img.shields.io/badge/Stack%20Overflow-ASK%20NOW-FE7A16.svg?logo=stackoverflow&logoColor=white)](https://stackoverflow.com/tags/kentico-cloud)
+[![Stack Overflow](https://img.shields.io/badge/Stack%20Overflow-ASK%20NOW-FE7A16.svg?logo=stackoverflow&logoColor=white)](https://stackoverflow.com/tags/kentico-Kontent)
 
-This repository contains source code of Shopify product selector custom element for Kentico Cloud
+This repository contains source code of Shopify product selector custom element for Kentico Kontent
 
 ## Setup
 
