@@ -7,7 +7,7 @@ This repository contains source code of Shopify product selector custom element 
 ## Setup
 
 1. Register a private app with Shopify
-    1. [See instructions in our documentaton](https://docs.kontent.ai/tutorials/develop-apps/integrate/integrating-with-e-commerce-shopify#a-step-1-register-a-private-app-within-shopify)
+    * [See instructions in our documentaton](https://docs.kontent.ai/tutorials/develop-apps/integrate/integrating-with-e-commerce-shopify#a-step-1-register-a-private-app-within-shopify)
 1. Deploy the code to a secure public host
     * See the [deploying section](#deploying) for a really quick option
 1. Follow the instructions in the [Kentico Kontent documentation](https://docs.kontent.ai/tutorials/develop-apps/integrate/integrating-your-own-content-editing-features#a-3--displaying-a-custom-element-in-kentico-kontent) to add the element to a content model.
