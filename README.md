@@ -1,50 +1,34 @@
-# Shopify product selector for Kentico Cloud
+# Shopify product selector for Kentico Kontent
 
-[![Stack Overflow](https://img.shields.io/badge/Stack%20Overflow-ASK%20NOW-FE7A16.svg?logo=stackoverflow&logoColor=white)](https://stackoverflow.com/tags/kentico-cloud)
+[![Stack Overflow](https://img.shields.io/badge/Stack%20Overflow-ASK%20NOW-FE7A16.svg?logo=stackoverflow&logoColor=white)](https://stackoverflow.com/tags/kentico-Kontent)
 
-This repository contains source code of Shopify product selector custom element for Kentico Cloud
+This repository contains source code of Shopify product selector custom element for Kentico Kontent
 
-# Use
+## Setup
 
-If you want to use Shopify product selector in your project in Kentico Cloud, follow these steps:
+1. Register a private app with Shopify
+    1. [See instructions in our documentaton](https://docs.kontent.ai/tutorials/develop-apps/integrate/integrating-with-e-commerce-shopify#a-step-1-register-a-private-app-within-shopify)
+1. Deploy the code to a secure public host
+    * See the [deploying section](#deploying) for a really quick option
+1. Follow the instructions in the [Kentico Kontent documentation](https://docs.kontent.ai/tutorials/develop-apps/integrate/integrating-your-own-content-editing-features#a-3--displaying-a-custom-element-in-kentico-kontent) to add the element to a content model.
+    * The `Hosted code URL` is where you deployed to in step 1
+    * Configure the JSON parameters as detailed in the [JSON Parameters section](#json-parameters)
 
-* In Kentico Cloud open Content models tab
-* Open / create a content model to which you want to add Shopify selector
-* Add **Custom element** content element
-* Open configuration of the content element
-* Use following URL as Hosted code URL (HTTPS): https://kentico.github.io/custom-element-samples/Shopify/product-selector.html
-* Provide the following JSON parameters for the custom element to connect it to your store, replace the macros with the actual values from Shopify admin UI
+## JSON Parameters
 
-```
+You will also need to provide the following JSON parameters for the custom element to connect to your store. Replace the placeholders with the actual values from the Shopify admin UI:
+
+```json
 {
   "storeFrontAccessToken": "<YOUR ACCESS TOKEN>",
   "apiEndpoint": "https://<YOUR STORE NAME>.myshopify.com/api/graphql"
 }
 ```
 
-# Installation
+## Deploying
 
-If you want to adjust the implementation, first download [Kentico Cloud Custom Elements Devkit](https://github.com/kentico/custom-element-devkit). This repository should be positioned within `/client/custom-elements` folder. For further instructions on devkit implementation, please refer to [Custom Element Devkit README](https://github.com/Kentico/custom-element-devkit/blob/master/readme.md).
+Netlify has made this easy. If you click the deploy button below, it will guide you through the process of deploying it to Netlify and leave you with a copy of the repository in your GitHub account as well.
 
-## Get started
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/Kentico/kontent-custom-element-shopify)
 
-Prerequisites:
-* Node.js
-* git
-
-```
-git clone https://github.com/Kentico/custom-element-devkit.git
-cd custom-element-devkit
-git clone https://github.com/Kentico/cloud-custom-element-sample-shopify.git ./client/custom-elements/cloud-custom-element-sample-shopify
-npm install --save jquery@^3.4.0
-npm start -- -hw
-```
-Browse: https://localhost:3000/custom-elements/cloud-custom-element-sample-shopify/wrap
-
-# Live site implementation sample
-
-If you want to see live site example of Shopify product displayed on the live site, browse to a [deployed sample site](https://kentico-cloud-sample-app-react-shopify.surge.sh/en-us/articles/3120ec15-a4a2-47ec-8ccd-c85ac8ac5ba5).
-
-See source code of the sample site implementation [here](https://github.com/Kentico/cloud-sample-app-react/commit/b93be362f8c6b854e98324fb9d68bc4a97c9cd79).
-
-![Analytics](https://kentico-ga-beacon.azurewebsites.net/api/UA-69014260-4/Kentico/cloud-custom-element-sample-shopify?pixel)
+![Analytics](https://kentico-ga-beacon.azurewebsites.net/api/UA-69014260-4/Kentico/kontent-custom-element-shopify?pixel)
