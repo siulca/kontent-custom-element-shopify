@@ -94,6 +94,7 @@ function getData(searchTerm, callback) {
                             id: edge.node.id,
                             handle: edge.node.handle,
                             title: edge.node.title,
+                            description: edge.node.description,
                             previewUrl: images && images.edges && images.edges.length && images.edges[0].node.originalSrc,
                             sku: variants && variants.edges && variants.edges.length && variants.edges[0].node.sku
                         };
