@@ -61,6 +61,12 @@ function getData(searchTerm, callback) {
         handle
         title
         description
+        priceRangeV2 {
+          maxVariantPrice {
+            amount
+            currencyCode
+          }
+        }
         images(first: 1) {
           edges {
           	node {
@@ -95,6 +101,8 @@ function getData(searchTerm, callback) {
                             handle: edge.node.handle,
                             title: edge.node.title,
                             description: edge.node.description,
+                            price: edge.node.priceRangeV2.maxVariantPrice.amount,
+                            currencyCode: edge.node.priceRangeV2.maxVariantPrice.currencyCode,
                             previewUrl: images && images.edges && images.edges.length && images.edges[0].node.originalSrc,
                             sku: variants && variants.edges && variants.edges.length && variants.edges[0].node.sku
                         };
