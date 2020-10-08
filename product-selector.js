@@ -60,6 +60,7 @@ function getData(searchTerm, callback) {
         id
         handle
         title
+        description
         images(first: 1) {
           edges {
           	node {
